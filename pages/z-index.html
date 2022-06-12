@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>z-index</title>
+
+    <style>
+      body {
+        width: 500px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      p {
+        background: aqua;
+        border: 3px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .positioned {
+        background: yellow;
+        top: 30px;
+        left: 30px;
+      }
+      .positioned {
+        position: static;
+        border: 3px solid violet;
+      }
+
+      .index-1 {
+        position: absolute;
+        z-index: 100;
+      }
+      .index-2 {
+        position: absolute;
+        z-index: 200;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>z-index</h1>
+
+    <p>
+      I am a basic block level element. My adjacent block level elements sit on
+      new lines below me.
+    </p>
+
+    <p class="index-1">
+      Now I'm absolutely positioned relative to the
+      <code>body</code> element, not the <code>&lt;html&gt;</code> element!
+    </p>
+
+    <p class="index-2">
+      We are separated by our margins. Because of margin collapsing, we are
+      separated by the width of one of our margins, not both.
+    </p>
+  </body>
+</html>

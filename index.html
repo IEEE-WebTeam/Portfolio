@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first website</title>
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+  </head>
+  <body>
+    <section class="nav">
+      <div class="nav__bar">
+        <div class="nav__logo">My website</div>
+        <div class="nav__list">
+          <li class="nav__items"><a href="#home">Home</a></li>
+          <li class="nav__items"><a href="#about">About</a></li>
+          <li class="nav__items"><a href="#portfolio">Portfolio</a></li>
+        </div>
+      </div>
+    </section>
+    <section class="header" id="home">
+      <div class="container">
+        <div class="head__txt">Hi I'm Waheed</div>
+        <div class="head__img">
+          <img src="assets/IMG/1.png" alt="Home image" />
+        </div>
+      </div>
+    </section>
+    <div class="about" style="background-color: #2e3b65" id="about">
+      <div class="container">
+        <div class="about__img">
+          <img src="assets/IMG/2.png" alt="about image" />
+        </div>
+        <div class="about__txt">
+          <h3 class="about__txt">A Web Developer</h3>
+          <p class="about__p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa
+            magni perspiciatis, eveniet quod eaque saepe libero ullam id,
+            voluptas beatae. Atque, qui? Want to know about me?
+          </p>
+          <button onclick="response()" id="btn" class="btn">Download CV</button>
+        </div>
+      </div>
+    </div>
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__head">
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card">
+          <a href="./pages/programmer.html" target="blank"
+            ><h2>Programmer</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. um vel
+              numquam deserunt.
+            </p>
+          </a>
+        </div>
+        <div class="card">
+          <h2>Web Developer</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+            commodi quis in dolorum rerum
+          </p>
+        </div>
+        <div class="card">
+          <h2>Graphic desiger</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+            um ad nostrum commodi a placeat
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
