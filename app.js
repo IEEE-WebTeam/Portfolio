@@ -5,10 +5,10 @@ function response() {
   if (profession == "Student") {
     alert("In progress bro..!");
     studentCount++;
-    for (i = 1; i < 10; i++) {
-      console.log(studentCount);
-    }
   } else {
     alert("Coming soon!");
   }
+}
+function showStudentCount(){
+      console.log(studentCount);
 }
